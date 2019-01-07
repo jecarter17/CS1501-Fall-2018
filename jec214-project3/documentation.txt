@@ -1,0 +1,40 @@
+General:
+	This programs utilizes 5 classes:
+		Apartment: object encapsulates apartment data
+		Indexer: data structure used for indirection contains ArrayList of IndexerNodes
+		IndexerNode: encapsulates Apartment object, and it's corresponding index in both the price PQ and area PQ
+		Tracker: overall apartment tracking data structure. Contains the two heap PQs implemented as ArrayLists as well as an Indexer for indirection.
+			Contains methods that implement primary functionality for project
+		AptTracker: main driver program that navigates through menu options and gathers user input
+	
+Tracker Functionality:
+	add():
+		separated into three sub processes for adding nodes to each of structures in the structures in the Tracker
+		each add makes a swim() call to maintain heap structure as, because apartments are added to the end of the ArrayLists, the only direction the node can move in upwards in the heap
+		(logn) runtime: constant time to add to last index, then call to sink()/swim()
+		
+	update():
+		after the price is updated, a swim() or sink() call is made on the updated Apartment node, depending on whether the update resulted in an increase or decrease in priority
+		(n + logn) runtime: linear search of Indexer, followed by call to sink()/swim();
+	
+	remove():
+		node is swapped to last index of heap before removing to simplify process. Aftwerward a swim() or sink() call is made on the original space of the removed node to preserve heap structure
+		(n + logn) runtime: linear Indexer search, followed by call to sink()/swim()
+	
+	lowestPrice()/highestArea():
+		simple peek to first index of respective PQs
+		constant runtime: due to simple get call
+	
+	cityLowestPrice()/cityHighestArea():
+		simple recursive search through heap for min/max from respective city. Each recursive call returns the desired min/max from both the left and right subheaps(if the current index has children)
+		O(n) runtime as each node in heap must be search in worst case
+		helper methods return index of lowestPrice/highestArea
+	
+Helper Methods:
+	swim()/sink():
+		based on implementations from https://algs4.cs.princeton.edu/24pq/
+		O(logn) runtime for heap struture restoration
+		
+	swap():
+		simple swap of two indices
+		updates indexer structure after swap
