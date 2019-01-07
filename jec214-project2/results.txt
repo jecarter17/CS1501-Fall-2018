@@ -1,0 +1,85 @@
+Filename		Compression Technique		Original File Size (KB)	Compressed File Size (KB)	Compression Ratio
+						
+all.tar			LZW				2960			1804				1.640798226
+			"MyLZW (""Do nothing"")"	2960			1751				1.690462593
+			"MyLZW (""Reset"")"		2960			1151				2.571676803
+			"MyLZW (""Monitor"")"		2960			1778				1.664791901
+			7zip				2960			912				3.245614035
+						
+assig2.doc		LZW				85			73				1.164383562
+			"MyLZW (""Do nothing"")"	85			40				2.125
+			"MyLZW (""Reset"")"		85			40				2.125
+			"MyLZW (""Monitor"")"		85			40				2.125
+			7zip				85			23				3.695652174
+						
+bmps.tar		LZW				1080			904				1.194690265
+			"MyLZW (""Do nothing"")"	1080			80				13.5
+			"MyLZW (""Reset"")"		1080			80				13.5
+			"MyLZW (""Monitor"")"		1080			80				13.5
+			7zip				1080			58				18.62068966
+						
+code.txt		LZW				71			31				2.290322581
+			"MyLZW (""Do nothing"")"	71			24				2.958333333
+			"MyLZW (""Reset"")"		71			24				2.958333333
+			"MyLZW (""Monitor"")"		71			24				2.958333333
+			7zip				71			15				4.733333333
+						
+code2.txt		LZW				57			24				2.375
+			"MyLZW (""Do nothing"")"	57			21				2.714285714
+			"MyLZW (""Reset"")"		57			21				2.714285714
+			"MyLZW (""Monitor"")"		57			21				2.714285714
+			7zip				57			13				4.384615385
+						
+edit.exe		LZW				231			245				0.942857143
+			"MyLZW (""Do nothing"")"	231			153				1.509803922
+			"MyLZW (""Reset"")"		231			153				1.509803922
+			"MyLZW (""Monitor"")"		231			149				1.55033557
+			7zip				231			119				1.941176471
+						
+frosty.jpg		LZW				124			174				0.712643678
+			"MyLZW (""Do nothing"")"	124			160				0.775
+			"MyLZW (""Reset"")"		124			160				0.775
+			"MyLZW (""Monitor"")"		124			168				0.738095238
+			7zip				124			124				1
+						
+gone_fishing.jpg	LZW				17			10				1.7
+			"MyLZW (""Do nothing"")"	17			9				1.888888889
+			"MyLZW (""Reset"")"		17			9				1.888888889
+			"MyLZW (""Monitor"")"		17			9				1.888888889
+			7zip				17			9				1.888888889
+						
+large.txt		LZW				1193			591				2.018612521
+			"MyLZW (""Do nothing"")"	1193			491				2.429735234
+			"MyLZW (""Reset"")"		1193			516				2.312015504
+			"MyLZW (""Monitor"")"		1193			491				2.429735234
+			7zip				1193			461				2.587852495
+						
+Lego-big.gif		LZW				92			126				0.73015873
+			"MyLZW (""Do nothing"")"	92			120				0.766666667
+			"MyLZW (""Reset"")"		92			120				0.766666667
+			"MyLZW (""Monitor"")"		92			120				0.766666667
+			7zip				92			91				1.010989011
+						
+medium.txt		LZW				25			13				1.923076923
+			"MyLZW (""Do nothing"")"	25			13				1.923076923
+			"MyLZW (""Reset"")"		25			13				1.923076923
+			"MyLZW (""Monitor"")"		25			13				1.923076923
+			7zip				25			11				2.272727273
+						
+texts.tar		LZW				1350			989				1.365015167
+			"MyLZW (""Do nothing"")"	1350			584				2.311643836
+			"MyLZW (""Reset"")"		1350			577				2.339688042
+			"MyLZW (""Monitor"")"		1350			584				2.311643836
+			7zip				1350			498				2.710843373
+						
+wacky.bmp		LZW				901			5				180.2
+			"MyLZW (""Do nothing"")"	901			4				225.25
+			"MyLZW (""Reset"")"		901			4				225.25
+			"MyLZW (""Monitor"")"		901			4				225.25
+			7zip				901			4				225.25
+						
+winnt256.bmp		LZW				154			156				0.987179487
+			"MyLZW (""Do nothing"")"	154			62				2.483870968
+			"MyLZW (""Reset"")"		154			62				2.483870968
+			"MyLZW (""Monitor"")"		154			62				2.483870968
+			7zip				154			46				3.347826087
