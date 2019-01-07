@@ -1,0 +1,22 @@
+**********************
+USER HISTORY APPROACH
+**********************
+
+For keeping track of user history I utilized a DLB as well as two ArrayLists. The
+two ArrayLists (one for tracking unique words and the other for corresponding frequencies)
+are created at the beginning of the program by reading the user_history.txt
+file line by line. If a word is read for the first time, it is added to the DLB
+as well as word ArrayList. A corresponding "1" is added to the frequency ArrayList
+at the same index. If duplicate word is read from the history file, the word is
+not added, but rather the corresponding frequency is incremented. Tracking the
+frequency helped for the ordering of predictions down the line.
+
+I wrote all code myself, so I did not have to research any runtimes. However to
+comment on the overall runtime of my program, all of my searchs and traversals
+of the ArrayLists have linear runtime with a couple traversals involving nested
+loops which would be quadratic (n^2). These additional traversals are non-ideal
+as the user_history increases asymptotically. However, in the testing of my program,
+in which user_history.txt filled to about 100 words, the timing was still comparable
+to the example program execution in the README.
+
+If any further detail on my approach is needed for grading, please reach out to me. 
