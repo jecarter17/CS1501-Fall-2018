@@ -1,0 +1,65 @@
+========================================
+CS/COE 1501 Assignment Information Sheet
+----------------------------------------
+
+You must submit an information sheet with every assignment.  Also be sure
+to submit all materials following the procedures described on the
+submission procedures page.
+
+Name: Justin Carter
+
+
+Lecture section: Tuesday, Thursday 9:30-10:45a
+
+
+Recitation day and time: Friday 11-11:50a
+
+
+Assignment #: 5
+
+
+Program due date: 12/12/18
+
+
+Handed in date: 12/12/18
+
+
+Source code file name(s):
+
+LargeInteger.java
+RsaKeyGen.java
+RsaSign.java
+
+
+Other file name(s) (if relevant):
+
+info_sheet.txt
+
+
+Does your program run without error?: No
+
+
+If not, what is/are the error(s) and which parts of your program run
+correctly?:
+Everything works correctly except for my modularExp() method. 
+
+LargeInteger:
+	multiply() and XGCD() work correctly
+
+RsaKeyGen works correctly
+
+RsaSign:
+	Hashes generated correctly
+	Signature is stored and read correctly
+	The decryption and encryption values are generated using the correct steps and logic, but the values are incorrect due to my modularExp() method
+
+The modularExp() method is the only piece of my project that leads to errors in signature decryption and encryption. My steps and overall project structure
+are correct and consistent with the guidelines.
+
+
+
+Additional comments to the grader:
+Sorry to keep reiterating, but just being clear. The result of any errors in signature verification are only due to my incorrect modularExp() method and not due to my
+overall project structure. I tried many different methods of calculating modular exponetiation. Most of which were logically correct, but were unusable as my division
+helper method was too slow to compute the answer as the values grew to the scale needed for this project. As a result I ended up submitting one of my attempts that terminates
+but does not always result in the correct answer.
